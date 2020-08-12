@@ -125,7 +125,7 @@ data "aws_ami" "skytower" {
 
 data "aws_ami" "kali" {
   most_recent      = true
-  name_regex       = ".*kali-2019.4-essentials*"
+  name_regex       = ".*kali-2019.4-*"
   owners           = ["588675961644"]
 }
 
