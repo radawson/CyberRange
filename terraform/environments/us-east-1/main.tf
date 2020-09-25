@@ -8,6 +8,15 @@ module "staging-state" {
   environment = "${var.environment}"
 }
 
+terraform {
+  backend "s3" {
+    bucket  = "cyberrange.clockworx.tech"
+//    key     = "london/secdevops-cuse.tfstate"
+    region  = "us-east-1"
+    encrypt = true
+  }
+}
+
 module "range-infra" {
   source      = "../../modules/infrastructure"
   environment = var.environment

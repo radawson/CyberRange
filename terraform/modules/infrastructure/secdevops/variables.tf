@@ -117,7 +117,7 @@ variable "fbctf_ct" {
 
 variable "kali_ct" {
   description = "# of kali assets to create"
-  default     = 1
+  default     = 15
 }
 
 variable "docker_ct" {
